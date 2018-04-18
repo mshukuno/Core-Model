@@ -15,6 +15,14 @@
     <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Core-Model</RepositoryUrl>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\Landis-scenarios\build\Debug</OutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\Landis-scenarios\build\Release</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Landis.SpatialModeling" Version="1.0.0" />
     <PackageReference Include="Landis.Utilities" Version="1.0.0" />
